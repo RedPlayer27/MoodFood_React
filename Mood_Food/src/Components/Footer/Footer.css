@@ -1,0 +1,104 @@
+/* ========================
+   Mobile-first base styles
+   ======================== */
+.footer {
+  background: #333;
+  color: #fff;
+  padding: 2rem 1.5rem;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column; /* stacked on mobile */
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap; /* wrap links if too many */
+  justify-content: center;
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.footer-links li a:hover {
+  color: #ff6b6b;
+}
+
+
+/* ========================
+   Tablet (≥768px)
+   ======================== */
+@media (min-width: 48em) {
+  .footer {
+    text-align: left;
+    padding: 2rem;
+  }
+
+  .footer-content {
+    flex-direction: row; /* side by side */
+    justify-content: space-between;
+    align-items: center;
+    gap: 0;
+  }
+
+  .footer p {
+    font-size: 1rem;
+  }
+
+  .footer-links li a {
+    font-size: 1rem;
+  }
+}
+
+
+/* ========================
+   Laptop (≥1024px)
+   ======================== */
+@media (min-width: 64em) {
+  .footer {
+    padding: 2.5rem 3rem;
+  }
+
+  .footer p {
+    font-size: 1.05rem;
+  }
+
+  .footer-links {
+    gap: 1.5rem;
+  }
+}
+
+
+/* ========================
+   Laptop L (≥1440px)
+   ======================== */
+@media (min-width: 90em) {
+  .footer {
+    padding: 3rem 4rem;
+  }
+
+  .footer p {
+    font-size: 1.1rem;
+  }
+
+  .footer-links li a {
+    font-size: 1.05rem;
+  }
+}

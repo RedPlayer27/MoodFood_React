@@ -1,0 +1,111 @@
+/* ========================
+   Mobile-first base styles
+   ======================== */
+.hero {
+  min-height: 100vh; /* flexible height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem 1.5rem;
+  background: linear-gradient(135deg, #ffe29f, #ffa99f, #ff719a);
+  color: #ffffff;
+}
+
+.hero .container {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.hero-content h1 {
+  font-size: 2rem; /* smaller for mobile */
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.hero-content p {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero-btn {
+  display: inline-block;
+  background-color: #ffffff;
+  color: #ff6b6b;
+  padding: 0.75rem 1.5rem;
+  border-radius: 2rem;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.hero-btn:hover {
+  background-color: #ff6b6b;
+  color: #ffffff;
+}
+
+
+/* ========================
+   Tablet (≥768px)
+   ======================== */
+@media (min-width: 48em) {
+  .hero {
+    padding: 3rem 2rem;
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-content p {
+    font-size: 1.1rem;
+  }
+
+  .hero-btn {
+    font-size: 1.05rem;
+    padding: 0.85rem 2rem;
+  }
+}
+
+
+/* ========================
+   Laptop (≥1024px)
+   ======================== */
+@media (min-width: 64em) {
+  .hero {
+    padding: 4rem 2rem;
+  }
+
+  .hero-content h1 {
+    font-size: 3rem;
+  }
+
+  .hero-content p {
+    font-size: 1.25rem;
+  }
+
+  .hero-btn {
+    font-size: 1.1rem;
+    padding: 1rem 2.5rem;
+  }
+}
+
+
+/* ========================
+   Laptop L (≥1440px)
+   ======================== */
+@media (min-width: 90em) {
+  .hero-content h1 {
+    font-size: 3.5rem;
+  }
+
+  .hero-content p {
+    font-size: 1.4rem;
+  }
+
+  .hero-btn {
+    font-size: 1.15rem;
+    padding: 1rem 3rem;
+  }
+}
